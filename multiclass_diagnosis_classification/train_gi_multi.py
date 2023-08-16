@@ -293,7 +293,7 @@ tv_recall = round(best_trainer.evaluate(trainval_dataset)['eval_recall'],4)
 tv_f2_beta = round(best_trainer.evaluate(trainval_dataset)['eval_f2_beta'],4)
 
 
-#Update meta_df
+#Construct meta_df for evaluation metric storage 
 meta_df['runtime_min'] = [runtime]
 #best model steps
 meta_df['best_model_steps'] = [best_model_checkpoint.split('-')[-1]]
