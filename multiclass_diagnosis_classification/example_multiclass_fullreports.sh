@@ -1,3 +1,5 @@
+#Example shell script for multi-class classification, full reports 
+
 CUDA_VISIBLE_DEVICES=1 nohup python3 train_gi_multi.py gi_clinicalbert_512_fullreports 0 clinicalbert 8 512 lower_lr f2_beta 30 gi_multiclass_tvt_data_fullreports/ > gi_clinicalbert_512_bs8_rs0_30e_lowerLR_f2_beta_fullreports.txt  2>&1 &&
 CUDA_VISIBLE_DEVICES=1 nohup python3 train_gi_multi.py gi_clinicalbert_512_fullreports 0 clinicalbert 8 512 lower_lr roc 30 gi_multiclass_tvt_data_fullreports/ > gi_clinicalbert_512_bs8_rs0_30e_lowerLR_roc_fullreports.txt  2>&1 &&
 CUDA_VISIBLE_DEVICES=1 nohup python3 train_gi_multi.py gi_bigbird_2048_fullreports 0 bigbird 2 2048 lower_lr f2_beta 30 gi_multiclass_tvt_data_fullreports/ > gi_bigbird_2048_bs2_rs0_30e_lowerLR_f2_beta_fullreports.txt  2>&1 &&
