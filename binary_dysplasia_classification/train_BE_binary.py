@@ -314,7 +314,7 @@ test_recall = round(best_trainer.evaluate(test_dataset)['eval_recall'],4)
 test_f2_beta = round(best_trainer.evaluate(test_dataset)['eval_f2_beta'],4)
 print(test_roc, test_prc, test_f1)
 
-#Update meta_df
+#Save evaluation metrics in meta_df
 meta_df['runtime_min'] = [runtime]
 meta_df['best_model_steps'] = [best_model_checkpoint.split('-')[-1]]
 meta_df['best_model_dir'] = [best_model_checkpoint]
