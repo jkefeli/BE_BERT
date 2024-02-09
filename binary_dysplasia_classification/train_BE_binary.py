@@ -15,7 +15,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, roc_auc_score, average_precision_score, f1_score, fbeta_score, recall_score, precision_score
 from scipy.special import softmax
 from collections import Counter 
-from eval_metrics_binary_classifier import get_metrics
 
 start = time.time()
 curr_datetime = datetime.now().strftime('%m-%d-%Y_%Hh-%Mm')
